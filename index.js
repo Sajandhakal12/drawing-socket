@@ -86,8 +86,8 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(process.env.port || 4000, () => {
-  console.log(`Listening to port ${process.env.port || 4000}`);
+server.listen(process.env.PORT || 4000, () => {
+  console.log(`Listening to PORT ${process.env.PORT || 4000}`);
 });
 
 const exitHandler = () => {
