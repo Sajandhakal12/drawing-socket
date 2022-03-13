@@ -16,6 +16,7 @@ const sockets = {};
 const io = socketio(server, {
   cors: {
     origin: (origin, fn) => {
+      console.log(origin);
       if (allowedList.indexOf(origin) !== -1) return fn(null, origin);
       return fn("Error Invalid domain");
     },
